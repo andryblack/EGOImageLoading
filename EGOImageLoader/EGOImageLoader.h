@@ -34,6 +34,10 @@
 #define __EGOIL_USE_NOTIF 1
 #endif
 
+#if __EGOIL_USE_NOTIF || __EGOIL_USE_BLOCKS
+#import <UIKit/UIImage.h>
+#endif
+
 @protocol EGOImageLoaderObserver;
 @interface EGOImageLoader : NSObject/*<NSURLConnectionDelegate>*/ {
 @private
